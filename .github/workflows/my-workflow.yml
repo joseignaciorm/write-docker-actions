@@ -17,5 +17,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v1
+      
+      # Add an action reference to the workflow
+      - name: hello-world
+        uses: ./.github/actions/hello-world
 
       
